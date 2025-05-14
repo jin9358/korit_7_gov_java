@@ -3,7 +3,9 @@ package oop;
 public class Main {
 
     public static void main(String[] args) {
-//        UserRepository userRepository = new BasicUserRepository();
+        BasicUserRepository basicUserRepository  = new BasicUserRepository();
+        CustomUserRepository customUserRepository = new CustomUserRepository();
+
         BasicUserService userService = new BasicUserService(new CustomUserRepository());
 
         userService.addUser();
