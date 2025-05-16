@@ -9,9 +9,25 @@ class Student {
     public Student(String name, int score) {
         this.name = name;
         this.score = score;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 }
+
 public class Main2 {
 
     public static void main(String[] args) {
@@ -24,8 +40,12 @@ public class Main2 {
                 new Student("김준오", 85)
         );
 
-        for(int i = 0; i < students.size(); i++){
-            if(students )
+
+        for(Student std : students) {
+            if(std.getScore() > 84) {
+                System.out.println("85점 이상인 학생 : " + std.getName() + " " + std.getScore()+ "점");
+
+            }
         }
     }
 
