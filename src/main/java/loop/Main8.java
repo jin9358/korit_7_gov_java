@@ -12,12 +12,22 @@ public class Main8 {
             newWords.add((i+1) + "." + words.get(i));
         }
 
+        int a = 10;
+        Integer b = (Integer) a;
+        int c = (int) b;
+//        Integer b = 10;     // <--  Integer b = new Integer(10); 을 해준것
+        System.out.println(a + b + c);
+
         // ints 리스트에 Integer 자료형으로 옮기시오.
         List<Double> doubles = List.of(1.12, 2.23, 3.34, 4.45);
         List<Integer> integers = new ArrayList<>();
         for (Double d : doubles) {
-
+//            double dd = d;
+//            int i = (int) dd;
+//            integers.add(i);
+            integers.add(d.intValue());
         }
+        System.out.println(integers);
 
     }
 }
