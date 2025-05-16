@@ -14,6 +14,10 @@ public class Main8 {
 
         // ints 리스트에 Integer 자료형으로 옮기시오.
         List<Double> doubles = List.of(1.12, 2.23, 3.34, 4.45);
+        List<Integer> integers = new ArrayList<>();
+        for (Double d : doubles) {
+
+        }
 
     }
 }
